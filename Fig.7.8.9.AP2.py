@@ -96,24 +96,6 @@ ctrl_data = np.genfromtxt('../../MAF/MAF_continent_Ctrl.txt', dtype = None, deli
 
 
 
-## Try doing a shading plot.
-Ymins = np.zeros((NumYears,NumModels-1))
-Ymaxs = np.zeros((NumYears,NumModels-1))
-
-
-k=0
-
-x = np.linspace(0,525, 526)
-for i in range(0,NumModels-1):
-
-    Ymins[:,i] = np.min(SLC[:,:,i], axis=1)
-    Ymaxs[:,i] = np.max(SLC[:,:,i], axis=1)
-
-
-
-    i = i+1
-    k = k+1
-
 
 ###############################################################################
 ######################## PLOTS ################################################
